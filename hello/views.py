@@ -9,7 +9,7 @@ from django.http import HttpResponse
 
 
 def index(request):
-    return HttpResponse("Hello, world. Welcome to the webiste of the Linked4Resilience project.\nThis website will be updated soon.")
+    return HttpResponse("Hello, world. Welcome to the webiste of the FAIR Expertise Hub project.\nThis website will be updated soon.")
 
 #
 # def db(request):
