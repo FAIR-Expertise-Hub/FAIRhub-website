@@ -1,6 +1,6 @@
-# This repository is linked with Heroku for hosting of the website of the Linked4Resilience project.
+# This repository is linked with Heroku for hosting of the website of the FAIR Expertise Hub project.
 
-## Please contact Shuai Wang in case of any questions. 
+## Please contact Shuai Wang in case of any questions.
 
 
 
