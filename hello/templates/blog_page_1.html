@@ -1,0 +1,161 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+<!-- Shuai's main page code -->
+
+        <!--
+        Home Slider
+        ==================================== -->
+
+		<section id="works" class="works clearfix">
+			<div class="container">
+				<div class="row">
+
+					<div class="sec-title text-center" style="margin: auto; width:65%">
+</br>
+</br>
+						<h3>FAIR yes, but how? FAIR Implementation Profiles in the Social Sciences</h3>
+
+						<h4 style="margin: auto; width:65%">By Angelica Maineri  and Shuai Wang </h4>
+						<br>
+						<a href="https://doi.org/10.5281/zenodo.7428412" onclick="javascript:window.open('https://doi.org/10.5281/zenodo.7428412', '_blank', 'noopener'); return false;"><img decoding="async" src="https://zenodo.org/badge/DOI/10.5281/zenodo.7428412.svg" alt="DOI"></a>
+						<div class="devider"><i class="fa fa-heart-o fa-lg"></i></div>
+					</div>
+
+					<div class="sec-sub-title text-center" style="margin: auto; width:50%" >
+
+
+
+
+						<!-- <div class="entry-content" style="margin:auto; text-align:left"> -->
+
+							<div class="contact-address" style="margin:auto; text-align:left">
+
+
+						<h3>Introduction</h3>
+
+
+
+						<p1>Since their formal formulation in a well-known paper in 2016 [1], the Findability, Accessibility, Interoperability and Reusability (FAIR) data principles have been adopted by a large array of institutes, funders, repositories, and individual researchers. One of the strengths of FAIR is the freedom of choice in the implementation, which allows communities and domains to adopt resources and technologies that better suit their needs. At the same time, however, this has led to a large heterogeneity in the chosen solutions, hindering interconnections within and across domains and communities [2].</p1>
+
+
+
+						<p1>FAIR Implementation Profiles (FIPs) have been proposed to foster synergies in the implementation of FAIR principles, by documenting the solutions adopted by communities to implement FAIR aspects and by making these solutions easier to review for the broader community. The aim of this short article is to explain (1) what FIPs are, using examples that should be familiar to most social scientists; (2) the added values of FIPs for social scientists; and (3) the steps to make a FIP for your community.</p1>
+
+
+
+						<hr><h3>FIPs: what are they?</h3>
+
+
+
+						<p1>The FIPs framework is the result of a joint collaboration between VU Amsterdam, Czech Technical University, Leiden University and <a href="https://www.go-fair.org/" style="color:DodgerBlue;" onclick="javascript:window.open('https://www.go-fair.org/', '_blank', 'noopener'); return false;">GO FAIR</a>, a stakeholder-driven initiative to support individuals and organisations with their FAIR implementation efforts. Each FIP represents a certain group of stakeholders, known as the FAIR Implementation Community (FIC, or community in short). In a nutshell, a FIP is a collection of FAIR implementation choices, a.k.a. declarations, by a community. These declarations specify which services, technologies, standards, tools, and other resources&nbsp; a community adopts to implement each of the FAIR guiding principles. Next, let us try to break down each concept to clarify what we mean by community, resource, and implementation choice.&nbsp;</p1>
+
+
+
+						<hr><h3>FAIR Implementation Communities (FICs)</h3>
+
+
+
+						<p1>According to Schultes et al. [2], a FAIR Implementation Community (or FIC) is “a self-identified organisation (composed of more than one person) sharing a common interest that aspires to the creation of FAIR data and services.” The definition is quite open, and it is probably easier to self-identify as a FIC rather than explaining what it is. A FIC can be a formal community or an informal one; it can be a project-based group that comes together for a limited period or a long-lasting one. A FIC can consist of a diverse range of stakeholders including, for instance, data providers, data users and data supporters (e.g. data stewards), all sharing a data-related interest. A FIC can consist of several sub-FICs. The FIP is ultimately declared by a representative of the FIC, a ‘data steward’, though this is not necessarily a formal role within the community.</p1>
+
+
+
+						<p1>For example, on an international level, a <a href="https://worldfair-project.eu/case-studies-of-worldfair/#social-surveys" style="color:DodgerBlue;" class="broken_link" onclick="javascript:window.open('https://worldfair-project.eu/case-studies-of-worldfair/#social-surveys', '_blank', 'noopener'); return false;">Social Surveys FIC</a> has been identified in the WorldFAIR project [3]. In the Netherlands, we envision a FIC revolving around ODISSEI, with several subcommunities focusing on different kinds of data, such as administrative data or media content data.&nbsp;</p1>
+
+
+
+						<hr><h3>FAIR Enabling Resources (FERs)</h3>
+
+
+
+						<p1>A FAIR Enabling Resource (or FER) is described by Schultes et al. [2]&nbsp; as “any digital object that provides a function needed to achieve some aspect of FAIRness and is explicitly linked to one or more FAIR Principles”. A FER can hence be a tool, software, technology, standard, etc. Take for instance principle <a href="https://www.gofair.foundation/f1" style="color:DodgerBlue;"onclick="javascript:window.open('https://www.gofair.foundation/f1', '_blank', 'noopener'); return false;">F1</a>, stating that unique, persistent and global identifiers should be assigned to data and metadata. To comply with it, a community might choose to use DOIs or handles for data, and ORCIDs for researchers (see more in our <a style="color:DodgerBlue;" href="https://odissei-data.nl/en/?p=11278">short article on PIDs</a>). As regards principle&nbsp; <a href="https://www.gofair.foundation/i2" style="color:DodgerBlue;"onclick="javascript:window.open('https://www.gofair.foundation/i2', '_blank', 'noopener'); return false;">I2</a>, stating that data and metadata should be described using FAIR vocabularies, the reuse of structured vocabularies such as the ones provided by the Data Documentation Initiative (DDI) and the Consortium of European Social Science Data Archives (CESSDA) as FERs can be very beneficial (see more on structured vocabularies, DDI and CESSDA in our <a href="https://odissei-data.nl/en/2022/10/controlled-vocabularies-for-the-social-sciences-what-they-are-and-why-we-need-them/" style="color:DodgerBlue;">short article on Controlled Vocabularies</a>). A nice feature of FIPs is that communities can easily select an existing FAIR Enabling Resource from a drop-down list, or add a new one (making it available for those declaring a FIP in the future).&nbsp;</p1>
+
+
+
+						<hr><h3>FAIR Implementation choice</h3>
+
+
+						<div class="wp-block-image">
+						<figure class="alignright is-resized"><img decoding="async" loading="lazy" src="https://lh6.googleusercontent.com/sWaYE-iVf_8Vuo9zU7tBnZtUqujTmB0ojUdm5gSWQVW1khAUdaLBMXpvG7fzXRNlXOcWZvW2-nY3s5v97lRLonZVp2AVp79VhjfmmQUVbAkNOtJaX6XoWxzyAsqu2VevYjpzxLcUgq9kK85iG4FvX42R-Rj26AO3RTAqwdyoU7q1FCFlCskW4W21Ffm1jA" alt="" width="550"><figcaption class="wp-element-caption">Figure 1: Simplified representation of a FAIR Implementation Choice (source: https://doi.org/10.5281/zenodo.7284514)</figcaption></figure></div> <hr>
+
+
+						<p1>So far we vaguely referred to FICs “declaring” or “choosing” FAIR Enabling Resources. In the FIPs, choices consist of either selecting a FER which already exists, or accepting the challenge to build a FER whenever a suitable FER is not identified otherwise. This articulation of implementation choices allows communities to think of bottom-up solutions when necessary, and synchronise efforts in building FERs. Furthermore, a FIC can also declare that no FER is used to implement a certain FAIR principle, or that a FER is currently used but will be replaced.</p1>
+
+
+
+						<p1></p1>
+
+
+
+						<hr><h3>FAIR convergence matrix</h3>
+
+
+						<div class="wp-block-image">
+						<figure class="alignright is-resized"><img decoding="async" loading="lazy" src="https://lh3.googleusercontent.com/GszkAHSWIJ2znpKAeFahmbFV7GirDDIfS3OpOV3wKGCl7gWF-I71lRlU387xb0m_F6nhr6JcKdS0mejZ9k-rOFbpkvsk30WqLhTxYvvKIJ8imUNbDmbv7PUtVM4MkN-rebBknktzVBpmPYT2AD-OoYEgaNVB07oyHy0sq9a_Zhb3HnaCPjWKSvIicVQUVw" alt="" width="500" ><figcaption class="wp-element-caption">Figure 2. Simplified example of FAIR Convergence Matrix (source: https://doi.org/10.5281/zenodo.7284514)&nbsp;<br>0 = No choice; 1 = Choice of existing FER; 2 = Challenge to build new FER.<br></figcaption></figure></div>
+
+<hr>
+						<p1>By concatenating FIPs next to each other, a FAIR Convergence Matrix is created. This is a great way to visualise convergence (and divergence) across communities. See a simplified example in Figure 2.</p1>
+
+
+
+						<p1>The blue square represents an example of convergence, e.g. a situation where most communities adopt the same FER. The yellow square represents an example of divergence: two communities adopt different FERs for the same FAIR principle. Beware that this does not mean that any chance of cross-community collaboration is hindered: perhaps, work can be done to develop a mapping schema to make the two different FERs interoperable. The red square, finally, highlights a gap: if Community A cannot find any suitable FER to implement a FAIR principle, perhaps it should propose a new FER to be added (or developed from scratch).</p1>
+
+           <hr><h3>FIPs: why we need them</h3>
+
+
+
+						<p1>There are several reasons why a FIC might want to engage with the FIP process. Creating a FIP is a great self-reflection exercise for a community. It can help to identify gaps (and strengths), and these can be used in various ways, e.g. applying for funding or guiding a project’s deliverables. A FIP can also increase the visibility of a community, especially within a domain. A FIP can be used to create a blueprint of a policy, for instance, that can be used to evaluate compliance of sub-projects. The heightened transparency over the FAIR implementation strategies adopted makes it easier for communities to cooperate and interact with each other, especially on a technical level, and makes it possible for the FERs to be validated by the wider research community and hence more likely to be reused. In addition, published FIPs are machine-readable and FAIR by design because they can be expressed as nanopublications. We will explain this further in a future ODISSEI FAIR Support short article.</p1>
+
+
+
+						<hr><h3>FIPs: how to make one</h3>
+
+
+
+						<p1>From an operational point of view, a FIP can be created quite easily via the <a href="https://fip-wizard.ds-wizard.org/" style="color:DodgerBlue;" onclick="javascript:window.open('https://fip-wizard.ds-wizard.org/', '_blank', 'noopener'); return false;">FIP wizard</a>, a user-friendly interface which guides users through the FIP in the form of a questionnaire. As preparation, many communities indicated that a less standardised spreadsheet format&nbsp; is also useful (see a template <a href="https://docs.google.com/spreadsheets/d/1yx8r2St6ha-lmQtg02Fvwu8nB21uWiTOM8tLIgJ70oE/edit#gid=127295437" style="color:DodgerBlue;" onclick="javascript:window.open('https://docs.google.com/spreadsheets/d/1yx8r2St6ha-lmQtg02Fvwu8nB21uWiTOM8tLIgJ70oE/edit#gid=127295437', '_blank', 'noopener'); return false;">here</a>). The real challenge (and opportunity) of a FIP is reaching community consensus over the implementation choices.&nbsp; For this reason, GO FAIR envisioned a workshop format that can be used by communities to have support from experts when creating their FIP.<br>The FAIR Expertise Hub for the Social Sciences is a project funded by the Platform for Digital Infrastructure for SSH (<a href="https://pdi-ssh.nl/en/front-page/" style="color:DodgerBlue;" onclick="javascript:window.open('https://pdi-ssh.nl/en/front-page/', '_blank', 'noopener'); return false;">PDI-SSH)</a> which aims at supporting SSH Data communities in the Netherlands in their FAIR Implementation efforts. Expertise is available within this project to support SSH communities in the Netherlands at declaring their FIPs. If this is something you and your community are interested in, or if you wish to provide input on FERs that are relevant for the social sciences but not yet included in the FIP wizard, please reach out to <a style="color:DodgerBlue;"href="mailto:angelica@odissei-data.nl">angelica@odissei-data.nl</a></p1>
+
+
+
+						<hr><h3>Relevant links</h3>
+
+
+
+						<ul>
+						<li><a style="color:DodgerBlue;" href="https://odissei-data.nl/en/2022/04/building-a-fair-expertise-hub-for-the-social-sciences/">Building a FAIR Expertise Hub for the Social Sciences&nbsp;</a></li>
+
+
+
+						<li><a style="color:DodgerBlue;" href="https://podcast.polyneme.xyz/episodes/fair-implementation-profile-fip-ontology" onclick="javascript:window.open('https://podcast.polyneme.xyz/episodes/fair-implementation-profile-fip-ontology', '_blank', 'noopener'); return false;">A podcast on FIPs</a></li>
+
+
+
+						<li><a style="color:DodgerBlue;" href="https://fip-wizard.ds-wizard.org/" onclick="javascript:window.open('https://fip-wizard.ds-wizard.org/', '_blank', 'noopener'); return false;">FIP Wizard</a></li>
+						</ul>
+
+
+
+						<hr><h3>References</h3>
+
+
+
+						<p1>[1] Wilkinson, M., Dumontier, M., Aalbersberg, I. et al. (2016). The FAIR Guiding Principles for scientific data management and stewardship. Sci Data 3, 160018. <a style="color:DodgerBlue;" href="https://doi.org/10.1038/sdata.2016.18" onclick="javascript:window.open('https://doi.org/10.1038/sdata.2016.18', '_blank', 'noopener'); return false;">https://doi.org/10.1038/sdata.2016.18</a><br>[2] Schultes, E., Magagna, B., Hettne, K.M., Pergl, R., Suchánek, M., Kuhn, T. (2020). Reusable FAIR Implementation Profiles as Accelerators of FAIR Convergence. In: Grossmann, G., Ram, S. (eds) Advances in Conceptual Modeling. ER 2020. Lecture Notes in Computer Science(), vol 12584. Springer, Cham. <a style="color:DodgerBlue;" href="https://doi.org/10.1007/978-3-030-65847-2_13" onclick="javascript:window.open('https://doi.org/10.1007/978-3-030-65847-2_13', '_blank', 'noopener'); return false;">https://doi.org/10.1007/978-3-030-65847-2_13</a><br>[3] Gregory, A., Hodson, S.. (2022). WorldFAIR Project (D2.1) \’FAIR Implementation Profiles (FIPs) in WorldFAIR: What Have We Learnt?’ (1.0). Zenodo. <a style="color:DodgerBlue;" href="https://doi.org/10.5281/zenodo.7378109" onclick="javascript:window.open('https://doi.org/10.5281/zenodo.7378109', '_blank', 'noopener'); return false;">https://doi.org/10.5281/zenodo.7378109</a>&nbsp;</p1>
+
+
+
+						<hr class="wp-block-separator has-css-opacity">
+
+
+
+						<p1>Featured image by <a style="color:DodgerBlue;" href="https://unsplash.com/@jontyson?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText" onclick="javascript:window.open('https://unsplash.com/@jontyson?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText', '_blank', 'noopener'); return false;">Jon Tyson</a> on <a href="https://unsplash.com/?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText"  style="color:DodgerBlue;" onclick="javascript:window.open('https://unsplash.com/?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText', '_blank', 'noopener'); return false;">Unsplash</a></p1>
+									</div>
+
+
+
+					</div>
+
+
+
+				</br>
+</br>
+
+{% endblock %}
