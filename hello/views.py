@@ -25,8 +25,8 @@ def blog_page(request, id):
     return HttpResponse(template.render(context, request))
 
 
-def presentation(request):
-    template = loader.get_template('presentation.html')
+def publication(request):
+    template = loader.get_template('publication.html')
     context = {}
     return HttpResponse(template.render(context, request))
 
