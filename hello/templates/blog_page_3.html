@@ -1,0 +1,92 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+<!-- Shuai's main page code -->
+
+        <!--
+        Home Slider
+        ==================================== -->
+
+		<section id="works" class="works clearfix">
+			<div class="container">
+				<div class="row">
+
+					<div class="sec-title text-center" style="margin: auto; width:65%">
+</br>
+</br>
+						<h3>Aligning Data Management Plans with Community Standards using FAIR Implementation Profiles</h3>
+
+						<h4 style="margin: auto; width:65%">By Angelica Maineri, Shuai Wang, Navroop K. Singh, and Tycho Hofstra </h4>
+						<br>
+						<a href="https://doi.org/10.5281/zenodo.10286752"><img src="https://zenodo.org/badge/DOI/10.5281/zenodo.10286752.svg" alt="DOI"></a>
+						<!-- <a href="https://doi.org/10.5281/zenodo.7428412" onclick="javascript:window.open('https://doi.org/10.5281/zenodo.7428412', '_blank', 'noopener'); return false;"><img decoding="async" src="https://zenodo.org/badge/DOI/10.5281/zenodo.7428412.svg" alt="DOI"></a> -->
+						<div class="devider"><i class="fa fa-heart-o fa-lg"></i></div>
+					</div>
+
+					<div class="sec-sub-title text-center" style="margin: auto; width:50%" >
+
+
+
+
+						<!-- <div class="entry-content" style="margin:auto; text-align:left"> -->
+
+							<div class="contact-address" style="margin:auto; text-align:left">
+
+
+						<h3>Introduction</h3>
+
+
+
+						<p1>Data Management Plans (DMPs) are often required by organizations and funding agencies. When writing DMPs, taking into account community standards for publishing and managing research data can be a challenge for researchers. Community standards are often documented informally or communicated by word of mouth. The introduction of FAIR Implementation Profiles (FIPs) [1] offers a structured way to capture such standards. This paper investigates with a user study whether FIPs can serve as suggestions for aligning research data management with community standards. Through a customized interface with the related information extracted from FIPs as suggestions, we study whether researchers can take such suggestions into account when writing DMPs. Subsequently, a survey was conducted for each participant. </p1>
+
+</br>
+</br>
+						<h3>Implementation</h3>
+
+						<div class="wp-block-image">
+						<figure class="alignright is-resized"><img decoding="async" loading="lazy" src="{% static 'img/figures/img1.png' %}" alt="" width="550"><figcaption class="wp-element-caption">Table 1: Mapping of DMP Questions to FIP questions via the FAIR principles.</figcaption></figure></div>
+					</br>
+					</br>
+							<p1>In this study, we used the DMP template of the Vrije Universiteit Amsterdam (VU). By mapping the questions in the DMP template to the FAIR principles [2] and then selecting the corresponding questions in FIPs, we can obtain a mapping between DMP and FIP (Table 1). This mapping is then used for the extraction of related information in the FIPs as suggestions for the corresponding DMP questions in the knowledge model (KM). The KM is then used to create the interface on the FAIR Wizard platform. Six people in the Faculty of Social Sciences participated in the study followed by a survey.</p1>
+
+</br>
+</br>
+													<h3>Evaluation and Discussion</h3>
+
+<p1> Figure 1 shows how many researchers found the suggestions helpful or not for each DMP question. The survey results highlight some specific DMP questions where FIPs can be effectively used as suggestions (Q4.6, Q4.8, Q4.9, and Q4.13). However, this is not the case for others. The findings of the survey affirm the potential of FIPs as a valuable resource to harmonize research data with community standards. </p1>
+</br>
+</br>
+<div class="wp-block-image">
+<figure class="alignright is-resized"><img decoding="async" loading="lazy" src="{% static 'img/figures/img2.png' %}" alt="" width="550"><figcaption class="wp-element-caption">Figure 1. Comparing the impact of suggestions on DMP questions: helpful or inspiring vs. not helpful or misleading.</figcaption></figure></div>
+</br>
+</br>
+<h3>Conclusion</h3>
+<p1>
+In conclusion, this paper explored how FIPs can be used as suggestions for DMPs and whether researchers can align their DMPs with community decisions through the use of FIPs. We constructed a mapping between DMP and FIP, and identified seven DMP questions that could be effectively addressed using community standards captured by FIPs. We constructed a KM tailored to the VU DMP template with the information of six distinct research communities' standards integrated into each question. Finally, a user study was conducted, which revealed that, for some questions, users find suggestions from FIPs helpful or inspiring. This is not the case for others.
+</p1>
+
+
+						<hr><h3>References</h3>
+
+<p1> [1] E. Schultes, B. Magagna, K. M. Hettne, R. Pergl, M. Suchánek, and T. Kuhn, ‘Reusable FAIR Implementation Profiles as Accelerators of FAIR Convergence’, in Advances in Conceptual Modeling, G. Grossmann and S. Ram, Eds., in Lecture Notes in Computer Science. Cham: Springer International Publishing, 2020, pp. 138–147. doi: 10.1007/978-3-030-65847-2_13. </br>
+[2] M. D. Wilkinson et al., ‘The FAIR Guiding Principles for scientific data management and stewardship’, Sci Data, vol. 3, no. 1, p. 160018, Dec. 2016, doi: 10.1038/sdata.2016.18. </p1>
+
+
+
+						<hr class="wp-block-separator has-css-opacity">
+
+
+
+						<!-- <p1>Featured image by <a style="color:DodgerBlue;" href="https://unsplash.com/@jontyson?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText" onclick="javascript:window.open('https://unsplash.com/@jontyson?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText', '_blank', 'noopener'); return false;">Jon Tyson</a> on <a href="https://unsplash.com/?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText"  style="color:DodgerBlue;" onclick="javascript:window.open('https://unsplash.com/?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText', '_blank', 'noopener'); return false;">Unsplash</a></p1> -->
+									</div>
+
+
+
+					</div>
+
+
+
+				</br>
+</br>
+
+{% endblock %}
